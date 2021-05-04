@@ -1,14 +1,18 @@
 import './App.css';
-import Test from './comp/Test'
 import Test2 from './comp/Test2'
 
 function App() {
+  function plus(tiv) {
+    console.log(`avelacrelenq`,tiv);
+  }
+
+
+
   return (
     
     <div className="App">
-        <Test2 name="Poxos" age="40"/>
-        <hr/>
-        <Test2 name="Arsen" age="16"/>
+        <Test2 plus={plus} />
+
     </div>
   );
 }
