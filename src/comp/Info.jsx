@@ -1,5 +1,7 @@
 import React from 'react'
 import react from 'react'
+import hoc from '../hoc/randomNumHOC'
+
 
 class Info extends react.Component {
 
@@ -31,7 +33,7 @@ submit(e){
 }
 
 render() {
-
+    console.log(this.props);
     return (
         <div>
             <form onSubmit={this.submit} action="">
@@ -43,4 +45,4 @@ render() {
     }
 }
 
-export default Info;
+export default hoc(Info);
